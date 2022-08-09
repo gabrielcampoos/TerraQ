@@ -1,3 +1,4 @@
+/* Criando a variavel e função que puxa os dados dados*/
 var map = L.map('map').setView([-23.5, -46.6], 12);
 
 var tiles = L.tileLayer('https:\/\/{s}.tile.openstreetmap.org\/{z}\/{x}\/{y}.png',{maxZoom: 19}).addTo(map);
@@ -37,6 +38,7 @@ $.getJSON("https://terraq.com.br/api/teste-leaflet/pontos", function(data) {}).d
     	
 );
 
+/* Criando a função que da evento ao clicar no botão MAPA 2*/
 var el = document.querySelectorAll('.map2')
 	el[0].addEventListener('click' ,()=>{
 		// console.log('opa');
@@ -45,6 +47,7 @@ var tiles = L.tileLayer('https:\/\/server.arcgisonline.com\/ArcGIS\/rest\/servic
 
 })
 
+/* Criando a função que da evento ao clicar no botão MAPA 1*/
 var el = document.querySelectorAll('.map1')
 	el[0].addEventListener('click' ,()=>{
 
@@ -52,6 +55,7 @@ var el = document.querySelectorAll('.map1')
 
 })
 
+/* Criando a função que consome a API(URL) para os dados do usuário*/
 function fazGet(url){
     let request = new XMLHttpRequest()
     request.open("GET", url, false)
@@ -59,6 +63,7 @@ function fazGet(url){
     return request.responseText
 }
 
+/* Função pra criar uma tabela com os dados do usuário*/
 function criaLinha(usuario){
 
     linha = document.createElement("tr");
@@ -73,10 +78,11 @@ function criaLinha(usuario){
     return linha;
 }
 
+/* Função principal para consumir API e trazer os dados em string*/
 function main(){
     let data = fazGet("https://terraq.com.br/api/teste-leaflet/user")
     let usuario = JSON.parse(data);
-    console.log(usuario)
+    console.log(usuario) /* Funcionando*/
     let tabela = document.getElementById("tabela");
     usuario.forEach(element => {
         
