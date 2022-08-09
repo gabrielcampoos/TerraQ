@@ -56,15 +56,15 @@ git clone https://github.com/<SEU_USUARIO>/leaflet-frontend-test.git
 
 # Avaliação
 ## Lista de funcionalidades esperadas
-- [ ] Ao abrir o visualizador, formatar a visão do mapa (zoom e coordenada central) de acordo com as informações fornecidas pelo endpoint *visão inicial*
-- [ ] Alterar o ícone padrão (ícone de alerta) dos pontos para as imagens fornecidas pelo endpoint *pontos*
-- [ ] Alteração do pop-up já implementado (ao clicar nos pontos do mapa) utilizando as propriedades adicionais do ponto retornadas pelo endpoint *pontos*
-- [ ] Visualização responsiva do elemento #map, ocupando sempre a tela inteira (horizontal e verticalmente), independente do tamanho do dispositivo do usuário
-- [ ] Permitir ao usuário alternar entre os dois mapas base fornecidos pelo retorno do endpoint *visão inicial*
-- [ ] Criar um menu flutuante com as informações do usuário fornecidas pelo endpoint *dados do usuário*
-- [ ] Comentários nos trechos de códigos das funcionalidades originais do repositório inicial
-- [ ] Comentários explicando novas funcionalidades desenvolvidas
-- [ ] Criar uma visualização dos dados de medições históricas contidas no endpoint *dados do ponto* da maneira que achar mais interessante
+- [X] Ao abrir o visualizador, formatar a visão do mapa (zoom e coordenada central) de acordo com as informações fornecidas pelo endpoint *visão inicial*
+- [X] Alterar o ícone padrão (ícone de alerta) dos pontos para as imagens fornecidas pelo endpoint *pontos*
+- [X] Alteração do pop-up já implementado (ao clicar nos pontos do mapa) utilizando as propriedades adicionais do ponto retornadas pelo endpoint *pontos*
+- [X] Visualização responsiva do elemento #map, ocupando sempre a tela inteira (horizontal e verticalmente), independente do tamanho do dispositivo do usuário
+- [X] Permitir ao usuário alternar entre os dois mapas base fornecidos pelo retorno do endpoint *visão inicial*
+- [-] Criar um menu flutuante com as informações do usuário fornecidas pelo endpoint *dados do usuário*
+- [X] Comentários nos trechos de códigos das funcionalidades originais do repositório inicial
+- [X] Comentários explicando novas funcionalidades desenvolvidas
+- [-] Criar uma visualização dos dados de medições históricas contidas no endpoint *dados do ponto* da maneira que achar mais interessante
 
 ## Critérios avaliados
 * Cumprimento do checklist das funcionalidades esperadas;
